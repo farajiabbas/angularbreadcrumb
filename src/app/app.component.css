@@ -1,0 +1,17 @@
+p {
+  font-family: Lato;
+}
+
+.my-nav {
+  background-color: #37D49B;
+  padding: 30px;
+  border-radius: 5px
+}
+
+a {
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+}

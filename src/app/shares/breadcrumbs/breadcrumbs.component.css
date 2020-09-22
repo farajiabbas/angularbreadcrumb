@@ -1,0 +1,72 @@
+.breadcrumb {
+  list-style: none;
+  overflow  : hidden;
+  font      : 18px Helvetica, Arial, Sans-Serif;
+  text-align: left;
+  padding: 10px 0;
+  background-color: #C7FEE7;
+}
+
+.breadcrumb li {
+  float: left;
+}
+
+.breadcrumb li a {
+  color          : black;
+  text-decoration: none;
+  padding        : 0 10px;
+  position  : relative;
+  display   : block;
+  float     : left;
+  border-right: 1px solid gray;
+};
+
+.breadcrumb li a:after {
+  content   : " ";
+  display   : block;
+  width     : 0;
+  height    : 0;
+  position     : absolute;
+  top          : 50%;
+  margin-top   : -50px;
+  right        : 100%;
+  z-index      : 2;
+}
+
+.breadcrumb li a:before {
+  content   : " ";
+  display   : block;
+  width     : 0;
+  height    : 0;
+  position     : absolute;
+  top          : 50%;
+  margin-top   : -50px;
+  right        : 100%;
+  z-index      : 1;
+}
+
+.breadcrumb li:first-child a {
+  padding-right: 10px;
+}
+
+.breadcrumb li:last-child a {
+  color         : gray;
+  pointer-events: none;
+  cursor        : default;
+  border-right: none!important;
+}
+
+.breadcrumb li:last-child a:after {
+  border: 0;
+}
+
+.breadcrumb li a:hover {
+  color: #1D65FE;
+}
+
+.breadcrumb li a:hover:after {
+  border-right-color: #1D65FE !important;
+}
+.arrow-back {
+  text-align: left;
+}
